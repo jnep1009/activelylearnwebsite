@@ -1,6 +1,21 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 
+video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	transform: translateX(-50%) translateY(-60%);
+	background-size: cover;
+	transition: 1s opacity;
+}
+
+
+
 /*
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
@@ -3356,15 +3371,15 @@
 
 	#banner {
 		background-attachment: fixed;
-		background-color: #272833;
-		background-image: url("../../images/banner.jpg");
+		background-color: transparent;
+		/*background-image: url("../../images/banner.jpg");*/
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
 		min-height: 100vh;
 		position: relative;
 		text-align: center;
-		z-index: 21;
+		z-index: 52;
 	}
 
 		#banner:before {
@@ -3376,10 +3391,10 @@
 		}
 
 		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
+			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
+			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
+			background-image: linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
 			content: '';
 			display: block;
 			height: 100%;

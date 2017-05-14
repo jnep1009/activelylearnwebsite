@@ -15,6 +15,13 @@ video {
 }
 
 /* Pricing */
+
+.comparison-rotate{
+	/*-ms-transform: rotate(270deg); !* IE 9 *!*/
+	/*-webkit-transform: rotate(270deg); !* Chrome, Safari, Opera *!*/
+	/*transform: rotate(270deg);*/
+}
+
 .comparison {
     max-width: 960px;
     margin: 0 auto;

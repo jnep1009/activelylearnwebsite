@@ -1756,7 +1756,7 @@ video {
 /* Basic */
 
 	html, body {
-		background: #343a46;
+		background: #f4f4f4;
 	}
 
 	body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1783,7 +1783,6 @@ video {
 		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
 		color: #03a9f4;
 		text-decoration: none;
 	}
@@ -1794,7 +1793,7 @@ video {
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #323738;;
 		font-weight: 700;
 	}
 
@@ -1804,10 +1803,11 @@ video {
 
 	p {
 		margin: 0 0 2em 0;
+		color: #323738;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #525a5c;
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -3513,16 +3513,21 @@ video {
 }
 
 #founding{
-	background-color:#F4F4F4;
+	background-color:#FFF;
 	padding: 40px;
-	-webkit-box-shadow: 0px 0px 31px -6px rgba(0,0,0,0.59);
-	-moz-box-shadow: 0px 0px 31px -6px rgba(0,0,0,0.59);
-	box-shadow: 0px 0px 31px -6px rgba(0,0,0,0.59);
+	border-radius:10px;
+	-webkit-box-shadow: 0px 0px 31px -6px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 31px -6px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 31px -6px rgba(0,0,0,0.2);
 
 
 }
 
-#founding p, li{
+#founding p{
+		color:#606060;
+}
+
+#founding li{
 		color:#606060;
 }
 #founding h3 b{

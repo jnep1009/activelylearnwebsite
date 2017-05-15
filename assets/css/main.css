@@ -1861,7 +1861,7 @@ video {
 		}
 
 	blockquote {
-		border-left: solid 4px rgba(255, 255, 255, 0.3);
+		border-left: solid 4px rgba(165, 165, 165, 0.3);
 		font-style: italic;
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 2em;
@@ -2604,12 +2604,11 @@ video {
 			}
 
 			.icon.alt:before {
-				color: #2b3e57 !important;
-				text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
+				color: rgba(255, 255, 255, 1); !important;
 			}
 
 		.icon.major {
-			background: #272833;
+			background: #3f4457;
 			border-radius: 100%;
 			cursor: default;
 			display: inline-block;
@@ -2626,6 +2625,7 @@ video {
 
 			.icon.major.alt {
 				text-decoration: none;
+				color: rgba(255, 255, 255, 1); !important;
 			}
 
 				.icon.major.alt:before {
@@ -2638,8 +2638,7 @@ video {
 				}
 
 				.icon.major.alt:before {
-					color: #272833 !important;
-					text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
+					color: rgba(255, 255, 255, 1); !important;
 				}
 
 /* Image */
@@ -2697,6 +2696,12 @@ video {
 			}
 		.peoples{
 			padding:10px;
+		}
+
+		.qpeoples{
+			left:10%;
+			padding:0px 0px 40px 20px;
+			max-width: 150px;
 		}
 
 /* List */
@@ -3231,10 +3236,29 @@ video {
 
 		}
 
+		.spotlight.style1 .content h2{
+			color:#FFF;
+		}
+
 		.spotlight.style1 .content p{
 			color:#FFF;
 		}
-		.spotlight.style1 .content h2{
+
+
+		.spotlight.style2 .content h2{
+			color:#FFF;
+		}
+
+		.spotlight.style2 .content p{
+			color:#FFF;
+		}
+
+
+		.spotlight.style3 .content h2{
+			color:#FFF;
+		}
+
+		.spotlight.style3 .content p{
 			color:#FFF;
 		}
 
@@ -3243,7 +3267,7 @@ video {
 			border-color: #5480f1;
 		}
 
-		.spotlight.style4 .content {
+		.spotlight.style3 .content {
 			border-color: #39c088;
 		}
 
@@ -3297,7 +3321,7 @@ video {
 		padding: 6em 0 4em 0;
 	}
 	.wrapper.style3 {
-		background: #02f4cf;
+		background: #53eed7;
 	}
 
 	.wrapper.style5 {
@@ -3538,10 +3562,12 @@ video {
 }
 
 .asrbanner{
-	background-image: url("../../images/darker_banner.png");
+	background-image: url("../../images/asrbanner.jpg");
+	background-blend-mode: darken;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height:400px;
+	background-position: center;
+	height:600px;
 }
 
 .asrbanner h2{
@@ -3550,12 +3576,26 @@ video {
 	position: relative;
   top: 50%;
 	color: #FFF;
-	font-weight:700;
+	font-size:2.5em;
+	font-weight:100;
 	transform: translateY(-50%);
 
 }
 
+.bb{
+	text-align: : left !important;
+}
+
 /*sectioning*/
+
+#zero{
+	padding:100px 300px;
+	text-align: center;
+}
+
+#five{
+
+}
 
 #why p,
 #why h2,
@@ -3707,6 +3747,7 @@ video {
 				#banner .content header h2 {
 					font-size: 2.5em;
 					margin: 0;
+					color: #FFF;
 				}
 
 				#banner .content header p {

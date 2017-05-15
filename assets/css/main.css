@@ -1764,7 +1764,7 @@ video {
 	}
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.75);
+		color: rgba(0, 0, 0, 0.7);
 		font-family: "Roboto", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 100;
@@ -1786,7 +1786,7 @@ video {
 		}
 
 	strong, b {
-		color: #323738;;
+		color: inherit;
 		font-weight: 700;
 	}
 
@@ -1955,7 +1955,7 @@ video {
 		}
 
 		99% {
-			color: #1c1d26;
+			color: #2b3e57;
 			z-index: 100001;
 			-moz-transform: scale(0.5) rotate(360deg);
 			-webkit-transform: scale(0.5) rotate(360deg);
@@ -1964,7 +1964,7 @@ video {
 		}
 
 		100% {
-			color: #1c1d26;
+			color: #2b3e57;
 			z-index: -1;
 			-moz-transform: scale(0.5) rotate(360deg);
 			-webkit-transform: scale(0.5) rotate(360deg);
@@ -1984,7 +1984,7 @@ video {
 		}
 
 		99% {
-			color: #1c1d26;
+			color: #2b3e57;
 			z-index: 100001;
 			-moz-transform: scale(0.5) rotate(360deg);
 			-webkit-transform: scale(0.5) rotate(360deg);
@@ -1993,7 +1993,7 @@ video {
 		}
 
 		100% {
-			color: #1c1d26;
+			color: #2b3e57;
 			z-index: -1;
 			-moz-transform: scale(0.5) rotate(360deg);
 			-webkit-transform: scale(0.5) rotate(360deg);
@@ -2013,7 +2013,7 @@ video {
 		}
 
 		99% {
-			color: #1c1d26;
+			color: #2b3e57;
 			z-index: 100001;
 			-moz-transform: scale(0.5) rotate(360deg);
 			-webkit-transform: scale(0.5) rotate(360deg);
@@ -2022,7 +2022,7 @@ video {
 		}
 
 		100% {
-			color: #1c1d26;
+			color: #2b3e57;
 			z-index: -1;
 			-moz-transform: scale(0.5) rotate(360deg);
 			-webkit-transform: scale(0.5) rotate(360deg);
@@ -2042,7 +2042,7 @@ video {
 		}
 
 		99% {
-			color: #1c1d26;
+			color: #2b3e57;
 			z-index: 100001;
 			-moz-transform: scale(0.5) rotate(360deg);
 			-webkit-transform: scale(0.5) rotate(360deg);
@@ -2051,7 +2051,7 @@ video {
 		}
 
 		100% {
-			color: #1c1d26;
+			color: #2b3e57;
 			z-index: -1;
 			-moz-transform: scale(0.5) rotate(360deg);
 			-webkit-transform: scale(0.5) rotate(360deg);
@@ -2256,7 +2256,7 @@ video {
 			-webkit-animation: overlay-hide 1.5s ease-in forwards !important;
 			-ms-animation: overlay-hide 1.5s ease-in forwards !important;
 			animation: overlay-hide 1.5s ease-in forwards !important;
-			background: #1c1d26;
+			background: #2b3e57;
 			content: '';
 			display: block;
 			height: 100%;
@@ -2300,7 +2300,7 @@ video {
 	}
 
 	header p {
-		color: #ffffff;
+		color: inherit;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -2443,7 +2443,7 @@ video {
 	}
 
 	select option {
-		background-color: #1c1d26;
+		background-color: #2b3e57;
 		color: #ffffff;
 	}
 
@@ -2604,7 +2604,7 @@ video {
 			}
 
 			.icon.alt:before {
-				color: #1c1d26 !important;
+				color: #2b3e57 !important;
 				text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
 			}
 
@@ -2645,7 +2645,6 @@ video {
 /* Image */
 
 	.image {
-		border-radius: 4px;
 		border: 0;
 		display: inline-block;
 		position: relative;
@@ -2664,9 +2663,7 @@ video {
 		}
 
 		.image img {
-			border-radius: 4px;
 			display: block;
-			padding:10px;
 		}
 
 		.image.left {
@@ -2916,8 +2913,8 @@ video {
 		background-color: transparent;
 		border-radius: 4px;
 		border: 0;
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
-		color: #ffffff !important;
+		box-shadow: inset 0 0 0 1.5px rgba(40, 204, 221, 0.7);
+		color: #28ccdd;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 300;
@@ -2936,8 +2933,9 @@ video {
 		input[type="button"]:active,
 		.button:hover,
 		.button:active {
-			box-shadow: inset 0 0 0 1px #03a9f4;
-			color: #03a9f4 !important;
+			box-shadow: inset 0 0 0 1px #28ccdd;
+			background-color:#28ccdd !important;
+			color: #FFF !important;
 		}
 
 		input[type="submit"]:active,
@@ -2985,13 +2983,19 @@ video {
 			box-shadow: none;
 			color: #ffffff !important;
 			margin: 5px;
+			-webkit-box-shadow: 0px 5px 20px -3px rgba(3, 169, 244, 0.5);
+			-moz-box-shadow: 0px 5px 20px -3px rgba(3, 169, 244, 0.5);
+			box-shadow: 0px 5px 20px -3px rgba(3, 169, 244, 0.5);
 		}
 
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
 			input[type="button"].special:hover,
 			.button.special:hover {
-				background-color: #0980dc;
+				background-color: #0980dc !important;
+				-webkit-box-shadow: 0px 5px 5px -3px rgba(9, 128, 220, 0.3);
+				-moz-box-shadow: 0px 5px 5px -3px rgba(9, 128, 220, 0.3);
+				box-shadow: 0px 5px 5px -3px rgba(9, 128, 220, 0.3);
 			}
 
 			input[type="submit"].special:active,
@@ -3224,13 +3228,22 @@ video {
 
 		.spotlight.style1 .content {
 			border-color: #03a9f4;
+
 		}
+
+		.spotlight.style1 .content p{
+			color:#FFF;
+		}
+		.spotlight.style1 .content h2{
+			color:#FFF;
+		}
+
 
 		.spotlight.style2 .content {
 			border-color: #5480f1;
 		}
 
-		.spotlight.style3 .content {
+		.spotlight.style4 .content {
 			border-color: #39c088;
 		}
 
@@ -3282,6 +3295,17 @@ video {
 
 	.wrapper {
 		padding: 6em 0 4em 0;
+	}
+	.wrapper.style3 {
+		background: #02f4cf;
+	}
+
+	.wrapper.style5 {
+		background: #FFF;
+	}
+
+	.wrapper.style4 {
+		background: #51617a;
 	}
 
 		.wrapper.style2 {
@@ -3341,6 +3365,7 @@ video {
 				.wrapper.style2 .button.special:active {
 					background-color: rgba(255, 255, 255, 0.25) !important;
 				}
+
 
 		.wrapper.fade-down > .container {
 			-moz-transform: translate(0,0);
@@ -3472,7 +3497,11 @@ video {
 
 /*this is jihoon code*/
 /*this is logo*/
-.logo{
+.round{
+	border-radius: 6px !important;
+	-webkit-box-shadow: 0px 5px 31px -6px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 5px 31px -6px rgba(0, 0, 0, 0.3));
+	box-shadow: 0px 5px 31px -6px rgba(0, 0, 0, 0.3);
 }
 
 .logoimg{
@@ -3486,10 +3515,13 @@ video {
 	list-style-type: none !important;
   margin: 0;
   padding: 0;
+
 }
 
 .footercontent a span {
   text-decoration: none;
+	color: #FFF !important;
+	font-weight:500;
 }
 
 .pname{
@@ -3503,6 +3535,34 @@ video {
 	text-align: center;
 	font-weight: 300;
 	line-height: 1.5;
+}
+
+.asrbanner{
+	background-image: url("../../images/darker_banner.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:400px;
+}
+
+.asrbanner h2{
+	text-align: center;
+	vertical-align: text;
+	position: relative;
+  top: 50%;
+	color: #FFF;
+	font-weight:700;
+	transform: translateY(-50%);
+
+}
+
+/*sectioning*/
+
+#why p,
+#why h2,
+#why h3,
+#why h4,
+#why li{
+	color:#FFF !important;
 }
 
 #founding{
@@ -3555,7 +3615,7 @@ video {
 
 					#header nav ul li a, #header nav ul li span {
 						border: 0;
-						color: inherit;
+						color: #FFF;
 						display: inline-block;
 						height: inherit;
 						line-height: inherit;
@@ -3603,6 +3663,7 @@ video {
 		position: relative;
 		text-align: center;
 		z-index: 52;
+		color: #FFF;
 	}
 
 		#banner:before {
@@ -3813,7 +3874,7 @@ video {
 				}
 
 				.spotlight .content {
-					background-color: #1c1d26;
+					background-color: #2b3e57;
 					border-width: 0 !important;
 					border-top-width: 0.35em !important;
 					bottom: auto !important;

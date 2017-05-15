@@ -9,9 +9,21 @@ video {
 	min-height: 100%;
 	width: auto;
 	height: auto;
-	transform: translateX(-50%) translateY(-60%);
+	transform: translateX(-50%) translateY(-50%);
 	background-size: cover;
 	transition: 1s opacity;
+}
+
+.videobg{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	transform: translateX(-50%) translateY(-50%);
+	background-size: cover;
 }
 
 /* Pricing */
@@ -2126,10 +2138,8 @@ video {
 		}
 
 	blockquote {
-		border-left: solid 4px rgba(165, 165, 165, 0.3);
 		font-style: italic;
-		margin: 0 0 2em 0;
-		padding: 0.5em 0 0.5em 2em;
+		padding: 0.5em 0 1em 0;
 	}
 
 	code {
@@ -3784,8 +3794,19 @@ video {
 		z-index: 100;
 	}
 
+/*this is font*/
+
+@font-face {
+    font-family: 'Avenir'; /*a name to be used later*/
+    src: url('../fonts/Avenir.ttc'); /*URL to font*/
+}
+
 /*this is jihoon code*/
 /*this is logo*/
+#titleBar .title{
+	font-family: 'Avenir';
+}
+
 .round{
 	border-radius: 6px !important;
 	-webkit-box-shadow: 0px 5px 31px -6px rgba(0, 0, 0, 0.3);
@@ -3999,7 +4020,7 @@ video {
 			max-width: 95%;
 			padding: 6em;
 			position: relative;
-			text-align: right;
+			text-align: center;
 			vertical-align: middle;
 			z-index: 1;
 		}
@@ -4010,6 +4031,7 @@ video {
 			}
 
 				#banner .content header h2 {
+					font-family: 'Avenir';
 					font-size: 2.5em;
 					margin: 0;
 					color: #FFF;
@@ -4018,7 +4040,10 @@ video {
 				#banner .content header p {
 					margin: 0.5em 0 0 0;
 					top: 0;
+					color:#FFF;
+					font-size:1.2em;
 				}
+
 
 			#banner .content .image {
 				border-radius: 100%;
@@ -4042,7 +4067,7 @@ video {
 /* Footer */
 
 	#footer {
-		background: #272833;
+		background: #3a3c46;
 		padding: 6em 0;
 		text-align: center;
 	}
@@ -4234,6 +4259,9 @@ video {
 				padding: 4.5em 0;
 			}
 
+			#zero{
+				padding:50px 80px;
+			}
 	}
 
 /* Small */
@@ -4380,7 +4408,7 @@ video {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: #272833;
+				background: #20b2fb;
 				box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
 			}
 
@@ -4454,7 +4482,7 @@ video {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #181920;
+				background: #262d39;
 				padding: 0.75em 1.25em;
 			}
 
@@ -4533,6 +4561,9 @@ video {
 				padding: 3.25em 1.5em;
 			}
 
+			#zero{
+				padding:50px 40px;
+			}
 	}
 
 /* XSmall */
@@ -4626,5 +4657,8 @@ video {
 						margin: 0;
 						padding: 0;
 					}
+			#zero{
+				padding:20px 10px;
+			}
 
 	}

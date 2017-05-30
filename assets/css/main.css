@@ -3255,9 +3255,8 @@ input[type="radio"] + label:before {
 }
 
 .qpeoples{
-    left:10%;
-    padding:0px 0px 40px 20px;
-    max-width: 150px;
+    right:10%;
+    max-width: 200px;
 }
 
 /* List */

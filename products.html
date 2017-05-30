@@ -30,14 +30,20 @@
                 <li><a href="#">Products</a></li>
                 <li><a href="philosophy.html">Philosophy</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="#" class="button special">Sign In</a></li>
+                <li><a href="#" id="signIn" class="button special">Sign In</a></li>
             </ul>
         </nav>
+        <div class="subBar">
+            <a href='#howitworks' class="first">How it works</a>
+            <a href="#differentiation">Features</a>
+            <a href="#benefit">Benefits</a>
+            <a href="#resource">Resources</a>
+        </div>
     </header>
 
     <!-- Main -->
-
-    <div id="howitworks" class="wrapper style1">
+    <div id="howitworks"></div>
+    <div class="wrapper style1">
         <header class="major">
             <h2>How Actively Learn works</h2>
         </header>
@@ -64,7 +70,8 @@
         </div>
     </div>
 
-    <div id="process" class="wrapper style5">
+    <div id="process"></div>
+    <div class="wrapper style5">
         <header class="major">
             <h2>An ideal instructional flow with Actively Learn</h2>
         </header>
@@ -90,7 +97,7 @@
                     <div class="6u  12u$(small)"><span class="image fit round"><img
                             src="images/product/CUSTOMIZE%20THE%20READING%20ENVIRONMENT.png"
                             alt=""/></span>
-                        <p><b>CUSTOMIZE THE READING ENVIRONMENT</b><br><br>
+                        <p style="text-align: center;"><b>CUSTOMIZE THE READING ENVIRONMENT</b><br><br>
                             Change settings for social features, chunking text, reading aids, and more. The flexibility
                             allows you to customize based on the context for an assignment and how your year is
                             progressing.</p>
@@ -98,7 +105,7 @@
                     <div class="6u  12u$(small)"><span class="image fit round"><img
                             src="images/product/DIFFERENTIATE%20INSTRUCTION%20_%20SCAFFOLDS.png"
                             alt=""/></span>
-                        <p><b>DIFFERENTIATE INSTRUCTION & SCAFFOLDS</b><br><br>
+                        <p style="text-align: center;"><b>DIFFERENTIATE INSTRUCTION & SCAFFOLDS</b><br><br>
                             Provide different scaffolds for different set of students in the assignment and assign texts
                             to specific individuals or groups.
                         </p>
@@ -448,23 +455,68 @@
         <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
     </ul>
     <ul class="icons footercontent">
-        <li><a href="#"><span class="label">TERM</span></a></li>
-        <li><a href="#"><span class="label">BLOG</span></a></li>
-        <li><a href="#"><span class="label">PRIVACY</span></a></li>
-        <li><a href="#"><span class="label">HELP</span></a></li>
+        <li><a href="http://www.activelylearn.com/terms/"><span class="label">TERMS & CONDITIONS</span></a></li>
+        <li><a href="http://www.activelylearn.com/blog/"><span class="label">BLOG</span></a></li>
+        <li><a href="http://www.activelylearn.com/privacy/"><span class="label">PRIVACY</span></a></li>
+        <li><a href="http://help.activelylearn.com/"><span class="label">HELP CENTER</span></a></li>
+        <li><a href="http://www.activelylearn.com/contact/"><span class="label">CONTACT US</span></a></li>
     </ul>
     <ul class="copyright">
         <li>&copy; ActivelyLearn. All rights reserved.</li>
         <li>Template : HTML5 UP</li>
     </ul>
 </footer>
-<div id="second_nav" class="dropdown2 2u 12u(medium) 12u$(xsmall)">
-    <div class="item collapse"><a href="#howitworks" style="color:black">How it works</a></div>
-    <div class="item collapse"><a href="#real-world" style="color:black">Feature</a></div>
-    <div class="item collapse"><a href="#resource" style="color:black">Resources</a></div>
-    <div class="item collapse">Go to ...</div>
-</div>
+<!-- Modal -->
+<div id="myModal" class="modal">
 
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="box alt">
+            <div class="row uniform">
+                <section class="2u 2u(medium) 12u$(xsmall)"></section>
+                <section class="8u 8u(medium) 12u$(xsmall)">
+                    <div class="budget-wrap">
+                        <div class="budget">
+                            <div class="footer clearfix">
+                                <section>
+                                    <form method="post" action="#">
+                                        <span class="close">&times;</span>
+                                        <h2 style="text-align:center;line-height:50%;margin:none">SIGN IN</h2>
+
+                                        <div class="row uniform 100%">
+                                            <div class="12u 12u$(small)">
+                                                <input type="text" name="name" id="name" value=""
+                                                       placeholder="Username"/>
+                                            </div>
+                                            <div class="12u$ 12u$(small)">
+                                                <input type="password" name="password" id="password" value=""
+                                                       placeholder="Password"/>
+                                            </div>
+                                            <div class="12u$">
+                                                <ul class="actions" style="text-align: center;">
+                                                    <li><input type="submit"
+                                                               value="create new account"
+                                                               class=""/></li>
+                                                    <li><input type="submit"
+                                                               value="Submit"
+                                                               class="special"/></li>
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="2u 2u(medium) 12u$(xsmall)"></section>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
@@ -477,21 +529,41 @@
 <script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="assets/js/main.js"></script>
 <script>
-    var dropdown = $('.dropdown2');
-    var item = $('.item');
+    var nav = $('.subBar');
+    if (nav.length) {
+        var fixmeTop = nav.offset().top - 100;
+        $(window).scroll(function () {
+            var currentScroll = $(window).scrollTop();
+            if (currentScroll >= fixmeTop) {
+                $('.subBar').css({
+                    position: 'fixed',
+                    width: '100%',
+                    top: '73px',
+                    left: '0'
+                });
+                $('header').css(
+                        'box-shadow', 'inherit'
+                );
+            } else {
+                $('.subBar').css({
+                });
+            }
+        });
+    }
 
-    item.on('click', function () {
-        item.toggleClass('collapse');
-
-        if (dropdown.hasClass('dropped')) {
-            dropdown.toggleClass('dropped');
-        } else {
-            setTimeout(function () {
-                dropdown.toggleClass('dropped');
-            }, 150);
-        }
-    })
-
+</script>
+<script>
+    var btn = document.getElementById("signIn");
+    var modal = document.getElementById('myModal');
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function () {
+        console.log('onclick');
+        modal.style.display = "none";
+    };
+    btn.onclick = function () {
+        console.log('onclick');
+        modal.style.display = "block";
+    };
 </script>
 
 </body>

@@ -194,9 +194,10 @@
 
 .Beginner, .Advanced, .Professional{
     border: 2px solid grey;
-    border-radius: 10%;
-    margin:20px;
+    border-radius: 30px;
+    margin:20px 10px;
     text-align: center;
+    padding:none;
 }
 .plan{
     text-align: center;
@@ -457,13 +458,13 @@ h3.table-title {
         padding: 10px;
         font-weight: bold;
     }
-    .comparison-table tr td.marker:before {
+    .comparison-table tr td.marker.free:before {
         content: "Free Trial: ";
     }
-    .comparison-table tr td.marker + td.marker:before {
+    .comparison-table tr td.marker.team:before {
         content: "Team: ";
     }
-    .comparison-table tr td.marker + td.marker + td.marker:before {
+    .comparison-table tr td.marker.school:before {
         content: "School: ";
     }
     .comparison-table thead tr td.marker {
@@ -503,7 +504,6 @@ h3.table-title {
     _display: inline; /* IE6 double margin fix */
     position: relative;
     margin: 0px;
-    box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
 }
 
 #pricing-table .plan:after {
@@ -537,18 +537,26 @@ h3.table-title {
 
 #pricing-table .plan1 .header{
     background-color: #87d2ff;
+    color:white;
+    font-weight: 700;
 }
 
 #pricing-table .plan2 .header{
     background-color: #3f9eff;
+    color:white;
+    font-weight: 700;
 }
 
 #pricing-table .plan3 .header{
     background-color: #2775ff;
+    color:white;
+    font-weight: 700;
 }
 
 #pricing-table .plan4 .header{
     background-color: #0068f4;
+    color:white;
+    font-weight: 700;
 }
 
 /* --------------- */
@@ -574,6 +582,7 @@ h3.table-title {
 
 #pricing-table li {
     padding: 10px 0;
+    font-size: 14px;
 }
 
 /* --------------- */
@@ -888,6 +897,12 @@ body {
 }
 
 @media screen and (max-width: 980px) {
+    .table-header{
+        margin-top: 50px;
+    }
+    .button-table{
+        display: none;
+    }
 
     .container.\31 25\25 {
                          width: 100%;
@@ -914,6 +929,9 @@ body {
 }
 
 @media screen and (max-width: 736px) {
+    .button-table{
+        display: none !important;
+    }
 
     .container.\31 25\25 {
                          width: 100%;
@@ -940,6 +958,12 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    .table-header{
+        margin-top: 50px;
+    }
+    .button-table{
+        display: none !important;
+    }
 
     .container.\31 25\25 {
                          width: 100%;
@@ -2371,7 +2395,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.35em;
+    font-size: 1.5em;
     line-height: 1.5em;
 }
 
@@ -4612,6 +4636,12 @@ body.is-touch #banner {
 
 @media screen and (max-width: 736px) {
 
+
+  .budget-wrap{
+      padding:0px;
+      background:rgb(246, 246, 246);
+      box-shadow:none;
+    }
     /* Basic */
     .biggerpadding{
         padding:10% 20%;
@@ -4917,7 +4947,21 @@ body.is-touch #banner {
 /* XSmall */
 
 @media screen and (max-width: 480px) {
+  .round{
+    border-radius: 5px !important;
+    -webkit-box-shadow: 0px 5px 10px -6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 5px 10px -6px rgba(0, 0, 0, 0.2));
+    box-shadow: 0px 5px 10px -6px rgba(0, 0, 0, 0.2);
+  }
 
+  .image.right {
+      float: none;
+      display: inline-block;
+      margin:auto;
+  }
+  .qpeoples{
+    right:0;
+  }
     /* Basic */
     .biggerpadding{
         padding:10% 5%;
@@ -4928,7 +4972,7 @@ body.is-touch #banner {
     }
 
     body, input, select, textarea {
-        font-size: 12pt;
+        font-size: 13pt;
         line-height:normal;
     }
 

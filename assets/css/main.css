@@ -193,12 +193,37 @@
 }
 
 .Beginner, .Advanced, .Professional{
-    border: 2px solid grey;
-    border-radius: 30px;
+    border: none;
+
+    padding:15px;
+    border-radius: 20px;
     margin:20px 10px;
     text-align: center;
     padding:none;
 }
+
+.Beginner{
+  background-color: rgb(250,250,250);
+  -webkit-box-shadow: 0px 5px 20px -6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 5px 20px -6px rgba(0, 0, 0, 0.2));
+  box-shadow: 0px 5px 20px -6px rgba(0, 0, 0, 0.2);
+}
+
+.Advanced{
+  background-color: rgb(183, 225, 251);
+  -webkit-box-shadow: 0px 5px 20px -6px rgba(156, 217, 255, 0.66);
+  -moz-box-shadow: 0px 5px 20px -6px rgba(156, 217, 255, 0.66);
+  box-shadow: 0px 5px 20px -6px rgba(156, 217, 255, 0.66);
+}
+
+.Professional{
+  background-color: rgb(89, 162, 238);
+  -webkit-box-shadow: 0px 5px 20px -6px rgba(70, 161, 255, 0.78);
+  -moz-box-shadow: 0px 5px 20px -6px rgba(70, 161, 255, 0.78);
+  box-shadow: 0px 5px 20px -6px rgba(70, 161, 255, 0.78);
+}
+
+
 .plan{
     text-align: center;
     font-size: 30px;
@@ -244,13 +269,7 @@
 }
 /* End  button*/
 /* Width Div Advanced*/
-.Advanced{
-    width: 400px;
-}
-/*Width Button Div Advanced */
-.Advanced .add{
-    min-width: 300px
-}
+
 
 /* start Animation */
 /* start Animation */
@@ -702,8 +721,11 @@ h3.table-title {
 /* Budget */
 .budget-wrap{
     padding:40px;
-    background:rgb(246, 246, 246);
-    box-shadow:0 25px 55px 0 rgba(0,0,0,.21),0 16px 28px 0 rgba(0,0,0,.22);
+    background:#FFF;
+    -webkit-box-shadow: 0px 5px 31px -6px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 5px 31px -6px rgba(0, 0, 0, 0.3));
+    box-shadow: 0px 5px 31px -6px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
 }
 .budget-wrap .header .title{
     color:black;
@@ -3275,7 +3297,7 @@ ol li {
 ul {
     list-style: disc;
     margin: 0 0 2em 0;
-    padding-left: 1em;
+
 }
 
 ul li {
@@ -3565,6 +3587,8 @@ input[type="button"].special:active,
 .button.special:active {
     background-color: #e13652;
 }
+
+
 
 input[type="submit"].disabled, input[type="submit"]:disabled,
 input[type="reset"].disabled,
@@ -4063,8 +4087,46 @@ body.landing .dropotron.level-0 {
 
 /*this is jihoon code*/
 /*this is logo*/
+input[type="submit"].special2,
+input[type="reset"].special2,
+input[type="button"].special2,
+.button.special2 {
+    background-color: #FFF;
+    box-shadow: none;
+    color: #0980dc !important;
+    margin: 5px;
+}
+
+input[type="submit"].special2:hover,
+input[type="reset"].special2:hover,
+input[type="button"].special2:hover,
+.button.special2:hover {
+    background-color: rgb(160, 215, 223) !important;
+    color: #FFF !important;
+    box-shadow:none;
+}
+
+input[type="submit"].special2:active,
+input[type="reset"].special2:active,
+input[type="button"].special2:active,
+.button.special2:active {
+    background-color: #e13652;
+}
+
+.fixheight{
+  line-height: 150%;
+  min-height:60px;
+}
+
 #titleBar .title{
 
+}
+
+.save{
+  font-size:3em;
+  line-height:0%;
+  text-align:center;
+  color:rgba(100,100,100,0.3)
 }
 
 .skinny{
@@ -4615,6 +4677,7 @@ body.is-touch #banner {
       padding:0px;
       background:rgb(246, 246, 246);
       box-shadow:none;
+      border-radius:none;
     }
     /* Basic */
     .biggerpadding{

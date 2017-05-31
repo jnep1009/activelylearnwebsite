@@ -563,18 +563,26 @@ h3.table-title {
 
 #pricing-table .plan1 .header{
     background-color: #87d2ff;
+    color: white;
+    font-weight: 700;
 }
 
 #pricing-table .plan2 .header{
     background-color: #3f9eff;
+    color: white;
+    font-weight: 700;
 }
 
 #pricing-table .plan3 .header{
     background-color: #2775ff;
+    color: white;
+    font-weight: 700;
 }
 
 #pricing-table .plan4 .header{
     background-color: #0068f4;
+    color: white;
+    font-weight: 700;
 }
 
 /* --------------- */
@@ -600,6 +608,8 @@ h3.table-title {
 
 #pricing-table li {
     padding: 10px 0;
+    font-size: 15px;
+
 }
 
 /* --------------- */

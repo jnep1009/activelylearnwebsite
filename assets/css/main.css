@@ -194,9 +194,10 @@
 
 .Beginner, .Advanced, .Professional{
     border: 2px solid grey;
-    border-radius: 10%;
-    margin:20px;
+    border-radius: 30px;
+    margin:20px 10px;
     text-align: center;
+    padding:none;
 }
 .plan{
     text-align: center;
@@ -2368,7 +2369,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.35em;
+    font-size: 1.5em;
     line-height: 1.5em;
 }
 
@@ -4609,6 +4610,12 @@ body.is-touch #banner {
 
 @media screen and (max-width: 736px) {
 
+
+  .budget-wrap{
+      padding:0px;
+      background:rgb(246, 246, 246);
+      box-shadow:none;
+    }
     /* Basic */
     .biggerpadding{
         padding:10% 20%;
@@ -4914,7 +4921,21 @@ body.is-touch #banner {
 /* XSmall */
 
 @media screen and (max-width: 480px) {
+  .round{
+    border-radius: 5px !important;
+    -webkit-box-shadow: 0px 5px 10px -6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 5px 10px -6px rgba(0, 0, 0, 0.2));
+    box-shadow: 0px 5px 10px -6px rgba(0, 0, 0, 0.2);
+  }
 
+  .image.right {
+      float: none;
+      display: inline-block;
+      margin:auto;
+  }
+  .qpeoples{
+    right:0;
+  }
     /* Basic */
     .biggerpadding{
         padding:10% 5%;
@@ -4925,7 +4946,7 @@ body.is-touch #banner {
     }
 
     body, input, select, textarea {
-        font-size: 12pt;
+        font-size: 13pt;
         line-height:normal;
     }
 
